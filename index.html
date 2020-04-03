@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>registration page</title>
+        <style>
+            
+            
+            body { background-image: url("Capture.jpg");
+                background-color: #ADD8E6;
+                    background-attachment: fixed;
+                    font-family: Arial, Helvetica, sans-serif;
+                    }         
+            
+            .main {
+                        border: 1px solid black;
+                        border-radius: 25px;
+                        border-bottom-left-radius: 0%;
+                        background-color: white;
+                        padding: 50px;
+                        height: 850px;
+                        margin: 0 auto;
+                        max-width:350px;
+                        background-color: white;
+                       
+                        }
+            .foot_text{
+                        text-align: center;}
+            .head_pic{
+                    display: block;
+                    margin: auto;
+                    width: 300px;
+                    align-items: center;
+                    }
+            label {
+                    line-height: 200%;
+                    font-size:11px;
+                    font-weight: 550;
+                    }
+             input,option {
+                     border-radius: 5px;
+                     border-color: transparent;
+                    line-height: 300%;
+                    background-color: rgb(225, 239, 248);
+                    width: 350px;
+                    }
+            select{
+                     border-radius: 5px;
+                     border-color: transparent;
+                     
+                    line-height: 300%;
+                    font-size: 15px;
+                    font-weight: 200;
+                    background-color: rgb(225, 239, 248);
+                    width: 350px;
+                    }
+
+            .submit{
+               
+                background-color: rgb(25, 25, 153);
+                border-radius: 10px;
+                border-bottom-left-radius: 0%;
+                width: 100%;
+                height: 65px;
+                margin-left: 1%;
+                margin-right: 30%
+                
+
+                }
+            h1 { font-size: 20px;
+                text-align: center;
+                color: rgb(34, 34, 180);}
+            #mess { font-size: 12px;
+                margin-left:  35px;
+                text-align: center;
+                
+                }
+            #popUpYes
+                        {
+                            background-color: rgb(25, 25, 153);
+                            border-radius: 10px;
+                            border-bottom-left-radius: 0%;
+                            width: 100%;
+                            height: 65px;
+                            margin-left: 1%;
+                            margin-right: 30%
+
+                        }
+            #popUpYes:hover
+                        {
+                        background-color: rgb(19, 27, 70);
+                        }
+
+
+        </style>
+    </head>
+    <div class="head_pic"><img src="head.JPG" alt="head pic"></div>
+    <div class="main" >
+          <h1 >Create a Secure Account</h1>
+         
+         <small id="mess">Welcome to the future of Savings & Investments</small>
+         <br/><br/><br/>
+
+        <form action="/accounts" method="post">
+            <label for="name"> Full Name:</label> <br/>
+            <input type="text" name="name" id ="name" placeholder="   Full Name" /><br/><br/><br/>
+            <label for="email"> Email Address:</label> <br/>
+            <input type="text"  name="email" id ="email" placeholder="   Email Address" /><br/><br/><br/>
+            <label for="phone"> Phone Number</label> <br/>
+            <input type="text" placeholder="   Phone Number" /><br/><br/><br/>
+            <label for="password"> Password</label> <br/>
+            <input type="password" placeholder="   Password" /><br/><br/><br/>
+            <label for="referrer" >Referrer Phone or Promo Code (Optional)</label> <br/>
+            <input type="text" placeholder="   Referrer Phone or Promo Code (Optional)" /><br/><br/><br/>
+            <label for="hearabout">How Did You Hear About Us? (Optional)</label> <br/>
+            <select id="hearabout" name="hearabout" ><br/>
+                <option disabled selected value>click to select</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Twitter">Twitter</option>
+                <option value="Instagram">Instagramt</option>
+                <option value="Friends">Friends/Family/Coworker Referral</option>
+                <option value="google">google Search</option>
+                <option value="Google">Google Playstore</option>
+                <option value="Online">Online Blog</option>
+                <option value="local">local Newspaper</option>
+                <option value="event">At an event</option>
+                <option value="others">others</option>
+              </select><br/><br/>
+              <input  style="color: white; font-size: 15px;" type="submit" value="CREATE ACCOUNT"  id="popUpYes"/></body>
+
+            
+            
+        </form>
+        
+    </div>
+    <div class="foot_text">
+        <a href="https://dashboard.piggyvest.com/login"><small style="color: white;">Already have an account? Log In</small></a>
+
+    </div>
+    
+    <body>
+        
+    </body>
+</html>
