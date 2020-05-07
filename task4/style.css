@@ -1,0 +1,243 @@
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#start:hover {
+    background-color: #4380c9;
+    transition-duration: .3s;
+}
+
+#intro-div {
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    top: 30%;
+    text-align: center;
+}
+
+#intro {
+    visibility: visible;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-size: 22px;
+    animation: blinker 1s step-start infinite;
+}
+
+#start {
+    width: 90%;
+    height:100px;
+    margin: auto;
+    border-radius: 90%;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    background-color:cyan;
+    border: 1px solid #559FF7;
+    border-radius: 5px;
+    color: #f0d0d0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media (min-width: 475px) {
+    #start {
+        width: 250px;
+    }
+    #restart {
+        width: 250px;
+    }
+}
+
+#number{
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+    border: 2px solid #559FF7;
+    border-radius: 100%;
+    width: 200px;
+    padding: 5px 15px;
+    background-color: cyan;
+}
+#score {
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+    border: 2px solid #559FF7;
+    border-radius: 100%;
+    padding: 20px;
+    width: 200px;
+    margin-left: -20px;
+    background-color:cyan;
+}
+.options {
+    padding: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(85,159,247,.07);
+    text-align: center;
+    /* color: white; */
+
+}
+
+#question {
+    visibility: hidden;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 22px;
+   
+}
+
+#option-div {
+    background-color: rgb(148, 128, 128);
+    border-radius: 10px;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+
+   
+}
+
+
+
+
+.options:hover {
+    background-color: rgba(85, 88, 247, 0.603);
+    transition-duration: .5s;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+#main {
+    width:40%;
+    margin: auto;
+    padding: 0px;
+    margin-top: 10%;
+}
+
+#values {
+    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+#button, #finish {
+    padding: 10px;
+    margin-top: 20px;
+    width: 80%;
+    visibility: hidden;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: cyan;
+    border: 1px solid #559FF7;
+    border-radius: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+
+
+
+#finish {
+    position: absolute;
+    width: 60%;
+    left: 20%
+}
+
+#button:hover {
+    background-color:rgb(0, 255, 55);
+    transition-duration: .3s;
+    height: 50px;
+}
+
+#finish:hover {
+    background-color: #4380c9;
+    transition-duration: .3s;
+}
+
+#post-quiz {
+    position: absolute;
+    width: 60%;
+    top: 20%;
+    left: 20%;   
+}
+
+#final-text {
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: rgba(0,0,0,.8)
+}
+
+#final-score {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: rgba(0,0,0,.8);
+    animation: blinker 1s step-start infinite;
+
+}
+@keyframes blinker{
+    50%{opacity: 0;}
+}
+
+#restart {
+    padding: 10px;
+    margin-top: 20px;
+    width: 50%;
+    height:200px;
+    visibility: hidden;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    background-color:cyan;
+    border: 1px solid #559FF7;
+    border-radius: 89%;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#restart:hover {
+    background-color: #4380c9;
+    transition-duration: .3s;
+}
+
+@media (max-width: 475px) {
+    #main {
+        width: 90%;
+    }
+
+    #finish {
+        width: 90%;
+        left: 6%;
+    }
+
+    #restart {
+        width: 70%;
+    }
+}
+
+@media (min-width: 476px) and (max-width: 768px) {
+    #main {
+        width: 80%;
+    }
+
+    #finish {
+        width: 80%;
+        left: 10%;
+    }
+}
