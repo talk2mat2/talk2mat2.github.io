@@ -1,0 +1,304 @@
+
+body{
+    background-image: url('image/forest.png');
+background-position: center;
+background-image: repeating-linear-gradient();
+animation: backcolor 15s infinite;
+margin: 0;
+
+padding: 0;
+
+
+
+
+}
+.nav{
+    background-color: rgb(84, 204, 168);
+max-height: 20%;
+width: 100vw;
+
+
+}
+.ullist  {
+    
+    display: flex;
+   flex-direction: row;
+
+   transition: all 0.5s;
+
+}
+
+.center{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+.nav-items ul li{
+   color: white;
+list-style: none;
+display: block;
+
+margin: 0px 6px 6px;
+text-transform: uppercase;
+
+
+    }
+.nav-icon{
+  
+    height: 2rem;
+    background-color: rgb(245, 237, 237);
+    width: 2rem;
+    border-radius: 3rem;
+   flex-direction: column;
+   cursor: pointer;
+   visibility: hidden;
+   position: absolute;
+   top: 0.5rem;
+   left: 0.5rem;
+   z-index: 100;
+}
+.active{
+    display: block;
+    top: 0;
+    
+      
+}
+.active li{
+    width: 100vw;
+    text-align: center;
+    padding-left: 0;
+}
+.active li:hover{
+    background: rgb(189, 195, 204);
+    color: blue;
+    
+      
+}
+
+.nav-icon1,.nav-icon2,.nav-icon3{
+    height: 0.2rem;
+    margin: 0.1rem;
+    background-color:rgb(52, 34, 131);
+    width: 1.3rem;
+
+}
+@media(max-width:700px){
+
+.ullist{
+    display: none;
+    
+}
+
+
+.ullist li:hover{
+    background-color: indigo; 
+    transition: all 0.6s;
+    
+}
+  
+    .nav-icon{
+        visibility: visible;
+    }
+
+    .nav-wrapper.hide-nav{
+        position: absolute;
+    
+    width: 0%;
+    
+ 
+        
+        
+    }
+    .nav-wrapper.hide-nav .nav-items{
+      visibility: hidden;
+        
+    }
+
+
+.nav-wrapper{
+    
+    background-color: rgb(84, 204, 168);
+    
+
+     
+    height: 100vh;
+        width: 70%;
+        display: flex;
+        position: absolute;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        justify-content: center;
+        transition: width  1s;
+        z-index: 9;
+       
+    
+    }
+    .nav{
+        background: none;
+    }
+    .nav-wrapper:hover{
+        background: rgba(20, 141, 125, 0.979);
+        
+    
+    }
+    
+    .nav-wrapper .ullist{
+        display: block;
+       
+    
+    
+    }
+    .nav-wrapper .ullist li{
+        
+        margin-bottom: 2rem;
+        width: 50vw;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    
+    }
+}
+
+@media(min-width:700px){
+ 
+/* .ullist li{
+    display: inline; */
+    .nav-items{
+        visibility: visible;
+    }
+}
+.main{
+    background-color: rgba(189, 195, 204, 0.603);
+   
+    color: rgb(52, 34, 131);
+    min-height: 100vh;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-right: 0%;
+    padding-left: 0%;
+    padding-bottom: 2%;
+}
+.headtext{
+    color: white;
+    border-radius: 1rem;
+    background-color: rgba(87, 84, 84, 0.801);
+    text-transform: capitalize;
+    text-shadow: rgb(16, 82, 73);
+}
+.card:hover{
+    background-color: black;
+}
+.card{
+    margin: 4rem;
+    color: rgb(0, 0, 0);
+    width: 14rem;
+    height: 20rem;
+  background-color: white;
+   position: relative;
+  display: flex;
+ flex-direction: column;
+    top: 4.7em;
+    z-index: 0;
+    
+    box-shadow: 0rem 0.5rem 0.9rem rgb(25, 25, 26);
+    
+}
+.texthead{
+    background-color: turquoise;
+    text-transform: capitalize;
+    color: rgb(2, 2, 2);
+  
+    display: flex;
+
+    
+    
+}
+.textfoot{
+    
+    background-color: turquoise;
+    position: relative;
+    bottom: -80%;
+    display: flex;
+    height: 2rem;
+    
+}
+.button{
+    margin-right: 0rem;
+}
+.button:hover{
+   background-color: teal;
+   color: black;
+}
+.price{
+   padding-right: 2rem;
+}
+.imagecard{
+    width: 14rem;
+    height: 20rem;
+    position: absolute;
+    z-index: -4;
+    display: block;
+    
+}
+.destinations{
+ 
+ flex-wrap: wrap;
+   max-width: 100%;
+   margin-bottom: 2%;
+}
+
+@media(max-width:730px){
+    .card{
+        min-width: 16rem;
+        min-height: 22rem;
+    }
+    .headtext{
+        margin-top: 9%;
+    }
+
+    .imagecard{
+        min-width: 16rem;
+        min-height: 22rem;
+        
+    }
+}
+footer p{
+    color: white;
+    text-transform: capitalize;
+
+}
+footer{
+    margin-top: 2rem;
+    padding-top: 0.1rem;
+    background-color: grey;
+    margin-bottom: -20%;
+}
+
+@keyframes backcolor{
+    0%{
+        background-color: chocolate;
+    }
+    25%{
+        background-color: rgb(68, 113, 195);
+    }
+    75%{
+        background-color: rgb(98, 71, 52);
+    }
+    100%{
+        background-color: rgb(39, 31, 25);
+    }
+}
+
+.logo{
+    margin-top: 1rem;
+    width: 30vh;
+    border-radius: 1rem;
+    opacity: 0.7;
+}
+.logodic{
+    
+    z-index: -1;
+}
