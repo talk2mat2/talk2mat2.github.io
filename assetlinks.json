@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "xyz.appmaker.ltjpsk",
+      "sha256_cert_fingerprints": ["CA:AE:82:12:E8:E7:8F:4F:96:26:D6:3E:DB:BA:E8:DB:82:01:4A:3F:F5:7B:2F:49:B1:07:03:74:05:05:74:5F"]
+    }
+  }
+]
