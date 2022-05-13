@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+h1,
+h2,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+a,a:active.a:visited{
+  text-decoration: none;
+  text-transform: none;
+}
+.nav {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  height: 80px;
+  width: 100%;
+}
+.brand-name {
+  color: #ffa500;
+  font-weight: bold;
+  font-family: "Macondo", cursive;
+}
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.nav-items li {
+  margin-right: 20px;
+  font-weight: 700;
+}
+.header-text {
+  color: #ffa500;
+  font-weight: 800;
+}
+.btn-book {
+  padding-left: 50px;
+  padding-right: 50px;
+  border: none;
+}
+.sub-text {
+  font-weight: bold;
+  color: #000000;
+  letter-spacing: 1.4px;
+  line-height: 2rem;
+}
+.content-section {
+  margin-top: 40px;
+}
+.text-content {
+  font-weight: 300;
+}
+.event-section {
+}
+.card-body {
+  padding-top: 40px;
+
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+.card-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #87799c;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.event-card {
+  height: 300px;
+  padding: 0;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.text-white {
+  color: #ffffff;
+}
+.card-text {
+  color: #868383;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+.bg-grey {
+  background-color: #f2f2f2;
+}
+
+.register-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  min-height: 400px;
+  margin-bottom: 100px;
+  background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+}
+.print-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  min-height: 400px;
+  margin-bottom: 100px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.hidden {
+  display: none;
+}
+.print-list {
+margin-top: 50px;
+}
+.print-list li {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
