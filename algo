@@ -9,7 +9,7 @@ while (true) {
   
         break;
     }
-    min++;
+    max++;
 }
     return max
 }
