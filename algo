@@ -88,4 +88,12 @@ function findMissingLetter(array)
   }
   return missing;
 }
+partial keys
+
+function partialKeys(h) {
+  let fetch = (h,p) => (q = Object.keys(h).sort().find(n => n.startsWith(p)), q ? h[q] : undefined);
+  return new Proxy(h, {
+    get: (h, p) => fetch(h, p)
+  });
+}
 
