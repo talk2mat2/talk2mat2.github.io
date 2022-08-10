@@ -69,3 +69,23 @@ function largestAdjacentLCM(arr) {
 }
 largestAdjacentLCM([1,2,3,4,6,10])///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Next missing charachter in alphabets array
+
+function findMissingLetter(array)
+{
+  let missing=""
+  for(let i=0;i<array.length;i++){
+   if(array[i+1]){
+      let index= array[i].charCodeAt(0)-96
+    let arrayNext= array[i+1].charCodeAt(0)-96
+    let next_alpha= index+1
+    if(index+1!=arrayNext){
+      missing=String.fromCharCode(next_alpha+96);
+      break;
+    }
+   }
+  }
+  return missing;
+}
+
