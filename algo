@@ -1,3 +1,4 @@
+
 //lcm of two numbers
 function findlCM(num1,num2)
 {
@@ -15,3 +16,22 @@ while (true) {
 
 let lcm= findlCM(6,10)
 console.log(lcm)
+
+
+
+//DUPLICATES IN ARRAY
+
+let numbers=[1,2,3,4,11,2,3,5,9,3,4,5]
+
+
+let i=0;
+let dup=new Set
+while(i<numbers.length){
+   console.log(numbers[i])
+   if(numbers.indexOf(numbers[i])!=numbers.lastIndexOf(numbers[i]))
+   {
+       dup.add(numbers[i])
+   }
+    i++
+    }
+    console.log([...dup])
