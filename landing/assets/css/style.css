@@ -1,10 +1,16 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face {
+  font-family: Manrope;
+  src: url("../Manrope-Light.ttf");
+}
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   list-style: none;
+  font-family: 'Open Sans';
 }
 
 .nav {
@@ -23,7 +29,7 @@
   line-height: 72px;
 }
 .header-subtext {
-  font-family: "Open Sans";
+  font-family: "Open Sans" !important;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -46,10 +52,11 @@
 .brand {
   font-family: "Manrope";
   font-style: normal;
-  font-weight: 700;
+  font-weight: bolder;
   font-size: 43.25px;
   line-height: 34px;
   color: #ffffff;
+  letter-spacing: 0.7px;
   cursor: pointer;
 }
 .btn-login {
@@ -67,13 +74,17 @@
 .nav-item {
   color: #ffffff;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 200;
   font-size: 16px;
   line-height: 28px;
   cursor: pointer;
+  font-family: "Open Sans";
 
 }
-
+.btn{
+  font-family: "Open Sans" !important;
+  white-space: nowrap;
+}
 .btnbuy {
   align-items: center;
   /* padding: 16px 56px; */
