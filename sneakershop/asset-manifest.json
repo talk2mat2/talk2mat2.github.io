@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d838f324.css",
+    "main.js": "/static/js/main.2e4eeda4.js",
+    "static/js/787.7c8957ef.chunk.js": "/static/js/787.7c8957ef.chunk.js",
+    "static/media/Montserrat-Light.ttf": "/static/media/Montserrat-Light.6fcc9263a21be961d246.ttf",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
+    "static/media/Quicksand-Light.ttf": "/static/media/Quicksand-Light.a7f8083e8b93da348dcc.ttf",
+    "static/media/Quicksand-Bold.ttf": "/static/media/Quicksand-Bold.a0a11318dd0b528da77d.ttf",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.d838f324.css.map": "/static/css/main.d838f324.css.map",
+    "main.2e4eeda4.js.map": "/static/js/main.2e4eeda4.js.map",
+    "787.7c8957ef.chunk.js.map": "/static/js/787.7c8957ef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d838f324.css",
+    "static/js/main.2e4eeda4.js"
+  ]
+}
